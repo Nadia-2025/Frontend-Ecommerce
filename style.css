@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Playwrite+AU+VIC+Guides&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+
+}
+body {
+    background: #E3E6F3; /* Degradado elegante */
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1 {
+    padding: 40px 80px;
+}
+.section-m1 {
+    padding: 40px 0px;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    background-color:#fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    outline:none;
+    transition: 0.2s;
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #000;
+    background-color:transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    outline:none;
+    transition: 0.2s;
+}
+body{
+    width: 100%;
+}
+/*HEADER*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E3E6F3;
+    padding: 10px 10px; /*diferente al suyo, depende del logo*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.logo{
+    mix-blend-mode: multiply;
+    height: 80px;
+    width: 80px;
+}
+#navbar{
+    display: flex;
+   align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none; 
+    padding: 0 20px; 
+    position: relative;
+  }
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: grey;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+#navbar li a.active::after {
+    content: "";
+    width: 30%; /*Define el ancho del subrayado como el 30% del ancho del enlace.*/
+    height: 2px;/*grosor de la linea*/
+    background: #088178;
+    position: absolute;
+    bottom: -4px; /* Coloca la línea 4 píxeles debajo del enlace.  */  
+    left: 20px; /* Mueve la línea 20 píxeles a la derecha dentro del enlace.*/
+}
+                    /*BANNER NEWS*/
+#banner{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+    background-position:center;
+    padding: 0 20px; /* Agrega espacio a los lados */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+#banner h3 {
+    font-size: 17px;
+    max-width: 90%; /* Limita el ancho del texto para que no toque los bordes */
+    margin: 0 auto; /* Centra el texto */
+    padding-top: 5px;
+}
+#banner h4 {
+    font-size: 15px;
+    max-width: 90%; /* Limita el ancho del texto para que no toque los bordes */
+    margin: 0 auto; /* Centra el texto */
+}
+#banner .banner-btn{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 1px 15px;
+    color:#fff;
+    background-color: transparent;
+    border-radius: 1px;
+    border: 0.5px solid #fff;
+    cursor: pointer;
+    outline:none;
+    transition: 0.2s;
+}
+#banner .banner-btn:hover{
+    background-color:#fff;
+    color: #000;
+}
+                        /*CAROUSEL*/
+
+/* .carousel-item img {
+    width: 20%;
+    height: auto; /* Mantiene la proporción natural */
+    /* max-height: 500px; /* Ajusta el máximo permitido 
+}*/
+/* .carousel {
+    width:50vw ;  /* 100% del ancho de la pantalla 
+    height: 100vh; /* 100% de la altura del viewport 
+    overflow: hidden; /* Evita que las imágenes sobresalgan 
+  } */
+.c-item {
+    height: 600px;
+}
+.c-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.c-caption {
+    position: absolute;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */ 
+  text-align: center;
+}
+.c-caption h1 {
+  color: #088178; /* Color del texto */
+  font-size: 4rem; /* Ajusta el tamaño del texto */
+  font-weight: bold;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Invierte el color (blanco → negro) */
+}
+                    /*FEATURES */
+#features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#features .fe-icon{
+    font-size: 33px;
+    padding-right: 15px;
+}
+
+                /*FEATURED PRODUCTS*/
+#product1 {
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.02s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+
+}
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+
+}
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178
+}
+#product1 .pro .heart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color:#088178;
+    font-weight: 500;
+    color:#e8f6ea;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+
+}
+.color-btn button {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 1px 3px;
+    color:grey;
+    background-color: transparent;
+    border-radius: 1px;
+    border: 0.5px solid grey;
+    cursor: pointer;
+    outline:none;
+    transition: 0.2s;
+}
+.color-btn button:hover{
+    background-color: grey;
+    color: #fff;
+}
+            /*SMALL BANNERS */
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(/banners/discount\ banner.avif);
+    min-width: 48%;
+    height: 50vh;
+    background-size: cover;
+    background-position:center;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image: url(banners/upcoming\ banner.avif);
+    align-items: flex-start;
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+#sm-banner h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color:#088178;
+    color: #fff;
+    border: 1px solid #088178;
+}
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(banners/lookbook.avif);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position:center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+    background-image: url(banners/trendy.avif);
+}
+#banner3 .banner-box3{
+    background-image: url(banners/look.avif);
+}
+#banner3 h2 {
+    color: #000;
+    font-weight: 900;
+    font-size: 22px;
+
+}
+#banner3 h3 {
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+    
+}
+            /*NEWSLETTER*/
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(footer/bg-newsletter.jpg);
+    background-repeat: no-repeat;   
+    background-size: cover;
+}   
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    
+}
+#newsletter p span{
+    color: #ffbd2f;
+    
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+  
+}
+#newsletter input{
+    height: 2.5rem;
+    padding: 0 1.25em;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    height:  2.5rem;
+    min-width: 100px;
+    padding: 0 20px;
+    white-space: nowrap;
+    background-color: #088178;
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+
+}
+            /*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    
+}
+
+footer h4{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+footer p{
+    font-size: 16px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow {
+    margin-top: 30px;
+}
+footer .follow i{
+    font-size: 25px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+footer .install .row {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+footer .install .row img{ 
+    width: 50%;
+    height: 100px;
+}
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+
+}
