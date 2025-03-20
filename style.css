@@ -5,8 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "League Spartan", sans-serif;
-
 }
+html {
+     scroll-behavior: smooth;
+}
+
 body {
     background: #E3E6F3; /* Degradado elegante */
 }
@@ -38,7 +41,7 @@ p{
     padding: 40px 80px;
 }
 .section-m1 {
-    padding: 40px 0px;
+    margin: 40px 0px;
 }
 button.normal{
     font-size: 14px;
