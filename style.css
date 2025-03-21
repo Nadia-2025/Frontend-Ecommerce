@@ -122,6 +122,9 @@ body{
     display: none;
     align-items: center;
 }
+#close{
+    display: none;
+}
                     /*BANNER NEWS*/
 #banner{
     justify-content: center;
@@ -206,6 +209,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+#features .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
 }
 #features .fe-icon{
     font-size: 33px;
@@ -493,7 +502,7 @@ footer .copyright {
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -300;
+        right: -300px;
         height: 100vh;
         width: 300px;
         background-color: #E3E6F3;
@@ -516,16 +525,52 @@ footer .copyright {
 #mobile i {
     color: #1a1a1a;
     font-size: 24px;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 #close{
+    display: initial; /* block también funcionaría*/
     position:absolute;
     top: 30px;
     left: 30px;
     color: #222;
     font-size: 24px;
-
-
+}
+#lg-bag{
+    display: none;
+}
+#banner {
+    height: 07vh;
+}
+#features {
+    justify-content: center;
+}
+#features .fe-box{
+    margin: 0px 20px;
 }
 
+#product1 .pro-container {
+
+    justify-content:center;
+}
+#product1 .pro {
+    margin: 20px;
+}
+#sm-banner .banner-box {
+    min-width: 100%;
+    height: 30vh;
+background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#banner3 .banner-box {
+ 
+    width: 32%;
+   
+}
+#newsletter .form {
+    width: 70%;
+}
+footer .col { 
+margin-bottom: 20px;
+    }
 }
