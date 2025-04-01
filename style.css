@@ -639,5 +639,17 @@ footer .copyright {
         top: 40%;
         left: 25%;
     }
-    
+    .section-p1{
+        padding: 5px;
+    }
+    #features {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    #features .fe-box {
+        width: 142px;
+        justify-content: space-between;
+        padding: 0px;
+    }
 }
