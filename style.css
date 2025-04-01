@@ -652,4 +652,13 @@ footer .copyright {
         justify-content: space-between;
         padding: 0px;
     }
+    #product1 .pro {
+        width: 100%;
+    }
+    #product1 p{
+       margin: 0;
+}
+#product1 .pro-container {
+    padding-top: 0;
+}
 }
