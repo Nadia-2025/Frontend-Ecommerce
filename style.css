@@ -674,4 +674,43 @@ footer .copyright {
     width: 100%;
     margin-bottom: 5px;
 }
+#newsletter {
+padding: 15px 5px;
+}
+#newsletter .form {
+    width: 100%;
+}
+footer {
+  gap: 10px;
+  
+}
+
+/* footer .col .contact{
+    gap: 100px;
+} */
+footer .col h4{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+footer .follow {
+    margin-top: 10px;
+}
+
+footer .follow i {
+    font-size: 15px;
+    padding-right: 3px;
+}
+footer .install .row img{
+    width: 180px;
+    height: 60px;
+    padding: 0;
+}
+footer .install .payment {
+    width:180px;
+    height: 50px;
+   
+}
+footer .copyright {
+    margin-top: 0;
+}
 }
