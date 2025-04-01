@@ -596,3 +596,12 @@ footer .copyright {
 }
 
 }
+@media (max-width: 477px){
+    #header {
+        padding: 5px;
+    }
+    .logo {
+        height: 70px;
+        width: 70px;
+    }
+}
