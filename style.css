@@ -504,7 +504,9 @@ footer .copyright {
     display: flex;
     justify-content: flex-start;
     align-items:center;
-    
+    padding-left:15px;
+
+
 }
 #page-header h2 {
 font-size: 55px;
@@ -514,6 +516,20 @@ color: #088178;
 #page-header p {
     font-size: 30px;
     }
+#pagination {
+    text-align: center;
+}   
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+}   
+#pagination a i {
+font-size: 14px;
+}
 
 /*       START MEDIA QUERY             */
 @media (max-width: 799px){
