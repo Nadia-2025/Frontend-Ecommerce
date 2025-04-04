@@ -590,9 +590,82 @@ font-size: 14px;
     line-height: 25px;
     font-size: 25px;
 }
-/*
-/*
+
+/*    BLOG PAGE        */ 
+#page-header.blog-header{
+    background-image: url(/blog/blog-read.avif);
+    height: 30vh; 
+    }
+    #blog{
+        padding: 150px 150px 0 150px;
+       
+    }
+    .blog-box{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        margin-bottom: 90px;
+    }
+    #blog.blog-img{
+        width: 50%;
+       
+        
+    }
+    #blog img {
+        width:500px;
+        height: 300px;
+        object-fit: cover;
+        margin-right: 40px;
+    }
+    #blog.blog-details{
+        width: 50%;
+       
+    }
+    #blog .blog-details a{
+        text-decoration: none;
+        font-size: 17px;
+        color: #000;
+        font-size: 800;
+        position: relative;
+        transition: 0.3s;
+       
+    }
+    #blog .blog-details a::after{
+        content: "";
+        width: 50px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 4px;
+        right: -60px;
+
+    }
+    #blog .blog-details a:hover{
+        color: #088178;
+
+    }
+    #blog .blog-details a:hover::after{
+        background-color: #088178;
+    }
+    #blog .blog-box h1{
+        position: absolute;
+        top: -60px;
+        left: 0;
+        font-size: 70px;
+        font-weight: 700;
+        color: #c9cbce;
+        z-index: -9;
+
+    }
+
+    
+    
+    /*         ABOUT PAGE         */
+    /*             CONTACT PAGE          */ 
+    
 /*       START MEDIA QUERY             */
+
 @media (max-width: 799px){
     #navbar {
         display: flex;
