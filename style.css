@@ -594,7 +594,7 @@ font-size: 14px;
 /*    BLOG PAGE        */ 
 #page-header.blog-header{
     background-image: url(/blog/blog-read.avif);
-    height: 30vh; 
+    height: 40vh; 
     }
     #blog{
         padding: 150px 150px 0 150px;
@@ -668,11 +668,29 @@ font-size: 14px;
         z-index: -9;
 
     }
-
-    
     
     /*         ABOUT PAGE         */
+    #page-header.aboutUs-header {
+        background-image: url(/blog/aboutUs1.avif);
+        height: 40vh;
+        background-size: cover;
+        background-position: 0;
+
+    }
+
     /*             CONTACT PAGE          */ 
+
+  #about-head {
+    display: flex;
+    align-items: center;
+  }  
+  #about-head img{
+    width: 50%;
+    height: auto;
+  }  
+  #about-head div{
+   padding: 40px;
+  }  
     
 /*       START MEDIA QUERY             */
 
