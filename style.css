@@ -780,6 +780,26 @@ font-size: 14px;
     #newsletter .form {
         width: 100%;
     }
+    #page-header.blog-header {
+        height: 20vh;
+    }
+    #blog {
+        padding: 100px 100px 0 100px;
+    }
+    .blog-box {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    #blog img {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    footer .install .row img {
+        height: 80px;
+        padding: 0;
+    }
 
 }
 @media (max-width: 477px){
