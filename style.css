@@ -593,7 +593,7 @@ font-size: 14px;
 
 /*    BLOG PAGE        */ 
 #page-header.blog-header{
-    background-image: url(/blog/blog-read.avif);
+    background-image: url(/blog+about/blog-read.avif);
     height: 40vh; 
     }
     #blog{
@@ -671,26 +671,38 @@ font-size: 14px;
     
     /*         ABOUT PAGE         */
     #page-header.aboutUs-header {
-        background-image: url(/blog/aboutUs1.avif);
+        background-image: url(/blog+about/aboutUs1.avif);
         height: 40vh;
         background-size: cover;
         background-position: 0;
 
     }
-
-    /*             CONTACT PAGE          */ 
-
-  #about-head {
+    #about-head {
     display: flex;
     align-items: center;
-  }  
-  #about-head img{
-    width: 50%;
-    height: auto;
-  }  
-  #about-head div{
-   padding: 40px;
-  }  
+    }  
+    #about-head img{
+        width: 50%;
+        height: auto;
+    }  
+    #about-head div{
+    padding: 40px;
+    }  
+    #about-head p {
+        text-align: justify;
+    }
+    #about-app{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+  
+    #about-app .video video {
+       width: 1000px;
+       height: 700px;
+       border-radius: 20px;
+    }
+    /*             CONTACT PAGE          */ 
     
 /*       START MEDIA QUERY             */
 
@@ -813,6 +825,22 @@ font-size: 14px;
         margin-right: 0;
         width: 100%;
         margin-bottom: 15px;
+    }
+    #page-header.aboutUs-header {
+        height: 20vh;
+    
+    }
+    #about-head {
+       padding: 20px 30px;
+
+    }
+    #about-head img {
+        height: 500px;
+    }
+    #about-app .video video {
+        width: 100%;
+        height: 700px;
+
     }
     footer .install .row img {
         height: 80px;
@@ -998,6 +1026,19 @@ font-size: 14px;
         height: 300px;
         margin-right: 0px;
         margin-bottom: 15px;;
+    }
+    #about-head {
+        flex-direction: column;
+ 
+    }
+  
+    #about-head img {
+        width: 100%;
+        height: auto;
+    }
+    #about-app .video video {
+        width: 100%;
+    
     }
  
 }
